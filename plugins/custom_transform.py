@@ -1,3 +1,4 @@
 def transform(df):
-    df["new_col"] = df["salary"] * 2
+    # Example custom logic
+    df["bonus"] = df.get("salary", 0) * 0.10
     return df
